@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Hallo aus Mainz!</h1>
+<img src="mainz.png" alt="" style="width: 150px; height: auto;">
+<script>
+    navigator.serviceWorker.register('sw.js')
+        .then(subscription => console.log(subscription))
+        .catch(err => console.error('Fehler', err));
+</script>
+</body>
+</html>
